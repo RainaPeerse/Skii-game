@@ -37,6 +37,9 @@ public class RaceTimer : MonoBehaviour
         {
             raceStarted = false;
             CancelInvoke("UpdateTimer");
+
+            // Save the race time to GameData
+            GameData.Instance.AddRaceTime(time);
         }
     }
 

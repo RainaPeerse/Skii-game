@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4545909442425289389}
   - component: {fileID: 8079144301829446629}
   - component: {fileID: 8806208139710033244}
+  - component: {fileID: 580997982}
+  - component: {fileID: 580997981}
   m_Layer: 0
   m_Name: LeftFlag
   m_TagString: Untagged
@@ -79,3 +81,32 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &580997982
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068159719053454477}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 182.49374, y: 21.160625, z: 0.344602}
+  m_Center: {x: 0.5732765, y: 11.098253, z: 0}
+--- !u!114 &580997981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068159719053454477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b34c97af8d9ca545b689fb846b4e46b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  passingDirection: 0
+  passedFlagMat: {fileID: 2100000, guid: 53977362616759d41982540cb98e2f3d, type: 2}
+  failedFlagMat: {fileID: 2100000, guid: 283f19d2bfb467c4d8d60eeb04f03eed, type: 2}
+  raceTimer: {fileID: 0}
